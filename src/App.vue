@@ -95,7 +95,9 @@
     <v-footer color="#121212">
       <v-row no-gutters>
         <v-col cols="12" class="text-center">
-          <span class="caption">Copyright © 2020 Matthias Schwarz</span>
+          <span class="caption"
+            >Copyright © {{ copyrightYear }} Matthias Schwarz</span
+          >
         </v-col>
       </v-row>
     </v-footer>
@@ -113,6 +115,7 @@ export default {
       { name: "About", path: "/about" },
       { name: "Contact", path: "/contact" },
     ],
+    copyrightYear: 2021,
   }),
   computed: {
     shrinkToolbar() {
